@@ -1,0 +1,5 @@
+1. Build the Homepage and Post Listing including CSS
+2. Implement Create Post Functionality
+3. Implement View and Edit Post Functionality 
+4. Implement Delete Functionality and Final Touches
+5. Add Responsive Styling
