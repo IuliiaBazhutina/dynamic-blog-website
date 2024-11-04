@@ -1,5 +1,57 @@
+
+Plan of Blog website
+
+
 1. Build the Homepage and Post Listing including CSS
+
+create index.html
+create styles.css
+create script.js
+ 
+   Load button
+        |
+    checkPost()
+        |
+    displayPost()
+        |
+addArticle(title, content, image) 
+
+
 2. Implement Create Post Functionality
+
+create new-post.html
+create script_newpost.js
+
+    Save button
+        |
+    checkPost()
+        |
+    savePost()
+
+
+
 3. Implement View and Edit Post Functionality 
+
+create post.html
+create script_post.js
+
+        Load page               Select post title            Save button
+            |                  from drop-down menu                |
+    createDropDownMenu()               |                    checkChanges()
+            |                      displayPost()                  |
+    addTargetOption(title)                                   saveChanges()
+                                      
+                                 
+
 4. Implement Delete Functionality and Final Touches
+
+update script_post.js
+
+       Delete button
+            |
+       deletePost()
+
+
 5. Add Responsive Styling
+
+Add styling in styles.css to adapt layout for small screens
