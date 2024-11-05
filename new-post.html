@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script_newpost.js" defer></script>
+    <title>New post</title>
+</head>
+
+<body>
+    <header>
+        <h1>Create a new blog post</h1>
+        <nav>
+            <ul>
+                <li><button OnClick=" location.href='index.html' ">Home</button></li>
+                <li><button OnClick=" location.href='post.html' ">View or edit post</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" id = "form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" required>
+            <label for="content">Content:</label>
+            <textarea id="content" rows="5" required></textarea>
+            <label for="image">Image URL:</label>
+            <input type="url" id="image">
+            <button id="save-btn">Save post</button>
+          
+       </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Iuliia Bazhutina</p>
+    </footer>
+</body>
+
+</html>
