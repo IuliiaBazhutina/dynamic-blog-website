@@ -39,8 +39,15 @@ button:hover {
     background-color: #c1603d;
 }
 
-#load-btn:hover {
+#load-btn:hover,
+#save-btn:hover {
     background-color: #d97e5c;
+}
+
+#save-btn {
+    margin: 5px auto;
+    background-color: #c1603d;
+    display: block;
 }
 
 h2 {
@@ -56,6 +63,32 @@ article {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    background-color: #dad6d6;
+    padding: 10pt;
+    border: 1px, solid #ddd;
+    border-radius: 5px;
+    width: 600px;
+    margin: 20px auto;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-size: medium;
 }
 
 footer {
