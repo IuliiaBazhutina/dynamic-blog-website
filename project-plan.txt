@@ -8,13 +8,14 @@ create index.html
 create styles.css
 create script.js
  
-   Load button
-        |
-    checkPost()
-        |
-    displayPost()
-        |
-addArticle(title, content, image) 
+              Load button
+                   |
+         ______checkPost()__
+        |                   |
+    displayPost()           |
+        |                   |
+   addArticle(title, content, image) 
+
 
 
 2. Implement Create Post Functionality
@@ -35,11 +36,13 @@ create script_newpost.js
 create post.html
 create script_post.js
 
-        Load page               Select post title            Save button
-            |                  from drop-down menu                |
-    createDropDownMenu()               |                    checkChanges()
-            |                      displayPost()                  |
-    addTargetOption(title)                                   saveChanges()
+                   Load page                   Select post title               Save button
+                      |                                |                            |
+             _____checkUrl()________           loadUrlWithId(title)            checkChanges()
+            |                       |                                               |
+    createDropDownMenu()      loadPost(id)                                     saveChanges()
+            |                                                                       |
+    addTargetOption(title)                                                   loadUrlWithoutId()
                                       
                                  
 
@@ -50,6 +53,9 @@ update script_post.js
        Delete button
             |
        deletePost()
+            |
+    loadUrlWithoutId()
+
 
 
 5. Add Responsive Styling

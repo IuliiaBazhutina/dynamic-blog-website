@@ -14,6 +14,11 @@ const changeButton = document.getElementById("change-btn");
 changeButton.addEventListener("click", function () { checkChanges(); });
 
 
+// call deletePost by clicking deleteButton
+const deleteButton = document.getElementById("delete-btn");
+deleteButton.addEventListener("click", function () { deletePost(); });
+
+
 
 
 // function gets post title as a parameter, find post ID, create URL with ID and load it
@@ -205,3 +210,27 @@ function loadUrlWithoutId() {
 }
 
 
+
+// function deletes selected post from the local storage
+
+function deletePost() {
+
+    const id = document.getElementById('ID');
+
+    const indexToDelete = id.value - 1;
+
+    // retrieve posts from local storage and convert them to array of objects
+    const posts = JSON.parse(localStorage.getItem("posts") || "[]");
+
+    // delete an element from the array posts using its index
+    posts.splice(indexToDelete, 1);
+
+    // convert array posts into String and save it to the Local storage
+    localStorage.setItem("posts", JSON.stringify(posts));
+
+    // reset the form
+    document.getElementById('form').reset();
+
+    // reload the URL
+    loadUrlWithoutId();
+}
