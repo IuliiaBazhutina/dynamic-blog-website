@@ -2,7 +2,7 @@ body {
     font-family: Arial;
     background-color: #f4f4f4;
     min-width: 960px;
-    margin-bottom: 90px;
+    margin: 0 0 90px 0;
 }
 
 header {
@@ -10,6 +10,7 @@ header {
     color: white;
     text-align: center;
     padding: 8px;
+    width: 100%;
 }
 
 nav ul {
@@ -18,6 +19,12 @@ nav ul {
 
 nav ul li {
     display: inline;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
@@ -40,14 +47,22 @@ button:hover {
 }
 
 #load-btn:hover,
-#save-btn:hover {
+#save-btn:hover,
+#change-btn,
+#delete-btn {
     background-color: #d97e5c;
 }
 
-#save-btn {
+#save-btn,
+#change-btn,
+#delete-btn {
     margin: 5px auto;
     background-color: #c1603d;
     display: block;
+}
+
+#choice {
+    background-color: #eec7b3;
 }
 
 h2 {
@@ -81,7 +96,8 @@ form label {
 }
 
 input,
-textarea {
+textarea,
+select {
     width: 100%;
     padding: 8px;
     margin: 5px 0;
@@ -99,4 +115,30 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    nav ul li,
+    div {
+        display: block;
+    }
+
+    body {
+        font-size: small;
+    }
+
+    header,
+    footer {
+        padding: 4px;
+    }
+
+    article {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    form {
+        width: 100%;
+    }
 }
